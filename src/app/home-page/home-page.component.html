@@ -1,0 +1,105 @@
+<ion-content class="ion-padding">
+  <div class="welcome-section">
+    <h1>Welcome to Eventify</h1>
+    <p>Discover and join amazing events near you</p>
+  </div>
+
+  <!-- Categories Section -->
+  <div class="categories-section">
+    <h2>Browse by Category</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="4" size-lg="3" *ngFor="let category of categories">
+          <ion-card routerLink="/events">
+            <img [src]="category.image" alt="{{ category.name }}">
+            <ion-card-header>
+              <ion-icon [name]="category.icon" class="category-icon"></ion-icon>
+              <ion-card-title>{{ category.name }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- Event Carousel -->
+  <div class="event-carousel">
+    <h2>Trending Events</h2>
+    <div class="carousel-container">
+      <div class="carousel-slides">
+        <div class="carousel-slide" *ngFor="let event of featuredEvents">
+          <ion-card>
+            <img [src]="event.image" alt="{{ event.title }}">
+            <ion-card-header>
+              <ion-card-subtitle>{{ event.date }}</ion-card-subtitle>
+              <ion-card-title>{{ event.title }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              {{ event.description }}
+            </ion-card-content>
+            <ion-button fill="clear" routerLink="/events">View Details</ion-button>
+          </ion-card>
+        </div>
+        <div class="carousel-slide">
+          <ion-card>
+            <img src="https://www.japanrailclub.com/wp-content/uploads/2024/11/6.Summer-Festival.jpg" alt="Summer Festival">
+            <ion-card-header>
+              <ion-card-subtitle>July 25, 2023</ion-card-subtitle>
+              <ion-card-title>Summer Festival</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Enjoy the summer with music, food, and fun activities!
+            </ion-card-content>
+            <ion-button fill="clear" routerLink="/events">View Details</ion-button>
+          </ion-card>
+        </div>
+        <div class="carousel-slide">
+          <ion-card>
+            <img src="https://eventacademy.com/wp-content/uploads/2018/11/cambridge-corporate-photographer-io-2016-003.jpg" alt="Business Conference">
+            <ion-card-header>
+              <ion-card-subtitle>August 15, 2023</ion-card-subtitle>
+              <ion-card-title>Business Conference</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Network with professionals and learn about business trends.
+            </ion-card-content>
+            <ion-button fill="clear" routerLink="/events">View Details</ion-button>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured-events">
+    <h2>Featured Events</h2>
+    <div class="event-cards">
+      <ion-card *ngFor="let event of featuredEvents">
+        <img [src]="event.image" alt="{{ event.title }}">
+        <ion-card-header>
+          <ion-card-subtitle>{{ event.date }}</ion-card-subtitle>
+          <ion-card-title>{{ event.title }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ event.description }}
+        </ion-card-content>
+        <ion-button fill="clear" routerLink="/events">View Details</ion-button>
+      </ion-card>
+    </div>
+  </div>
+
+  <div class="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <ion-list>
+      <ion-item *ngFor="let event of upcomingEvents">
+        <ion-thumbnail slot="start">
+          <img src="{{event.image}}" alt="{{event.title}}">
+        </ion-thumbnail>
+        <ion-label>
+          <h3>{{event.title}}</h3>
+          <p>{{event.date}}</p>
+          <p>{{event.location}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

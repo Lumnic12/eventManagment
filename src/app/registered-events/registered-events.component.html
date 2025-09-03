@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/events"></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Registered Events</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="registeredEvents.length === 0" class="no-events">
+    <p>You haven't registered for any events yet.</p>
+    <ion-button routerLink="/events">Browse Events</ion-button>
+  </div>
+
+  <div *ngIf="registeredEvents.length > 0" class="event-list">
+    <ion-list>
+      <ion-item *ngFor="let event of registeredEvents">
+        <ion-card class="event-card">
+          <img [src]="event.image" alt="{{event.title}}">
+          <ion-card-header>
+            <ion-card-subtitle>{{event.date}}</ion-card-subtitle>
+            <ion-card-title>{{event.title}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>{{event.description}}</p>
+            <p><ion-icon name="location-outline"></ion-icon> {{event.location}}</p>
+            <ion-button color="danger" fill="outline" (click)="unregisterFromEvent(event)">
+              Cancel Registration
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+
+<ion-toast
+  [isOpen]="isToastOpen"
+  [message]="toastMessage"
+  [duration]="2000"
+  (didDismiss)="isToastOpen = false"
+  position="bottom"
+  color="danger"
+></ion-toast>
+

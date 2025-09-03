@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="signup-container">
+    <div class="logo-container">
+      <ion-icon name="calendar" class="logo-icon"></ion-icon>
+      <h1>Eventify</h1>
+      <p>Create a new account</p>
+    </div>
+
+    <form [formGroup]="signupForm" (ngSubmit)="signup()">
+      <ion-item class="ion-margin-bottom">
+        <ion-label position="floating">Full Name</ion-label>
+        <ion-input type="text" formControlName="name" required></ion-input>
+        <ion-note slot="error" *ngIf="(name?.dirty || name?.touched) && name?.errors?.['required']">
+          Name is required
+        </ion-note>
+      </ion-item>
+
+      <ion-item class="ion-margin-bottom">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email" required></ion-input>
+        <ion-note slot="error" *ngIf="(email?.dirty || email?.touched) && email?.errors?.['required']">
+          Email is required
+        </ion-note>
+        <ion-note slot="error" *ngIf="(email?.dirty || email?.touched) && email?.errors?.['email']">
+          Please enter a valid email
+        </ion-note>
+      </ion-item>
+
+      <ion-item class="ion-margin-bottom">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" formControlName="password" required></ion-input>
+        <ion-note slot="error" *ngIf="(password?.dirty || password?.touched) && password?.errors?.['required']">
+          Password is required
+        </ion-note>
+        <ion-note slot="error" *ngIf="(password?.dirty || password?.touched) && password?.errors?.['minlength']">
+          Password must be at least 6 characters
+        </ion-note>
+      </ion-item>
+
+      <ion-item class="ion-margin-bottom">
+        <ion-label position="floating">Confirm Password</ion-label>
+        <ion-input type="password" formControlName="confirmPassword" required></ion-input>
+        <ion-note slot="error" *ngIf="(confirmPassword?.dirty || confirmPassword?.touched) && confirmPassword?.errors?.['required']">
+          Confirm Password is required
+        </ion-note>
+        <ion-note slot="error" *ngIf="(confirmPassword?.dirty || confirmPassword?.touched) && signupForm.errors?.['passwordMismatch']">
+          Passwords do not match
+        </ion-note>
+      </ion-item>
+
+      <ion-button expand="block" type="submit" [disabled]="!signupForm.valid">Sign Up</ion-button>
+    </form>
+
+    <div class="login-link">
+  <p>Already have an account?</p>
+  <ion-button expand="block" fill="outline" routerLink="/login">Login</ion-button>
+</div>
+  </div>
+</ion-content>

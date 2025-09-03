@@ -1,0 +1,196 @@
+/* Main container styling for centered content */
+ion-content {
+  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Signup container styling for centered floating box */
+.signup-container {
+  max-width: 400px;
+  width: 100%;
+  min-height: auto; /* Size based on content */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 123, 255, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4); /* Enhanced colorful shadow */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto; /* Center horizontally and ensure top/bottom spacing */
+}
+
+/* Logo container styling */
+.logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-icon {
+  font-size: 4rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Pulse animation for logo */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.logo-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.logo-container p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ion-item {
+  --background: #f8f9fa;
+  --border-radius: 8px;
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+ion-item:hover {
+  --background: #e9ecef;
+}
+
+ion-label {
+  --color: #333;
+  font-weight: 500;
+}
+
+ion-input {
+  --padding-start: 10px;
+  --color: #1a1a1a;
+  font-size: 1rem;
+}
+
+/* Error message styling */
+ion-note {
+  color: #dc3545; /* Red for error messages */
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  padding-left: 16px;
+}
+
+/* Sign up button styling with animation */
+ion-button {
+  --border-radius: 8px;
+  --padding-start: 2rem;
+  --padding-end: 2rem;
+  --background: #007bff;
+  --background-activated: #0056b3;
+  --background-hover: #0069d9;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+ion-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+ion-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+ion-button:active::before {
+  width: 0;
+  height: 0;
+}
+
+ion-button[disabled] {
+  --background: #b0bec5;
+  --background-activated: #b0bec5;
+  --background-hover: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* Login link button styling */
+ion-button[fill="outline"] {
+  --border-color: #007bff;
+  --color: #007bff;
+  --background-activated: rgba(0, 123, 255, 0.1);
+  --background-hover: rgba(0, 123, 255, 0.05);
+}
+
+/* Login link section styling */
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.login-link p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  .signup-container {
+    max-width: 100%;
+    margin: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4), 0 4px 10px rgba(255, 87, 127, 0.3);
+  }
+
+  .logo-icon {
+    font-size: 3rem;
+  }
+
+  .logo-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo-container p {
+    font-size: 0.9rem;
+  }
+
+  ion-button {
+    --padding-start: 1.5rem;
+    --padding-end: 1.5rem;
+  }
+
+  ion-note {
+    font-size: 0.8rem;
+  }
+}

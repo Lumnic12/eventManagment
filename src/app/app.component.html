@@ -1,3 +1,32 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Eventify</ion-title>
+      <ion-buttons slot="end">
+        <ion-button routerLink="/home">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
+        </ion-button>
+        <ion-button routerLink="/events">
+          <ion-icon name="calendar-outline"></ion-icon>
+          Events
+        </ion-button>
+        <ion-button routerLink="/login">
+          <ion-icon name="log-in-outline"></ion-icon>
+          Login
+        </ion-button>
+        <ion-button routerLink="/signup">
+          <ion-icon name="person-add-outline"></ion-icon>
+          Sign Up
+        </ion-button>
+        <ion-button routerLink="/profile">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          Profile
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
 </ion-app>

@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile-container" *ngIf="isLoggedIn && userData">
+    <div class="profile-header">
+      <div class="profile-avatar">
+        <div class="emoji-avatar">{{ userEmoji }}</div>
+      </div>
+      <h2>{{ userData.name }}</h2>
+      <p>{{ userData.email }}</p>
+    </div>
+
+    <ion-list>
+      <ion-item-divider>
+        <ion-label>ACCOUNT INFORMATION</ion-label>
+      </ion-item-divider>
+      
+      <ion-item>
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Name</h2>
+          <p>{{ userData.name }}</p>
+        </ion-label>
+      </ion-item>
+      
+      <ion-item>
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Email</h2>
+          <p>{{ userData.email }}</p>
+        </ion-label>
+      </ion-item>
+      
+      <ion-item-divider>
+        <ion-label>ACTIVITY</ion-label>
+      </ion-item-divider>
+      
+      <ion-item button routerLink="/events">
+        <ion-icon name="calendar-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>My Events</h2>
+          <p>View events you're attending</p>
+        </ion-label>
+        <ion-badge slot="end" color="primary">3</ion-badge>
+      </ion-item>
+      
+      <ion-item button routerLink="/events">
+        <ion-icon name="star-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Favorites</h2>
+          <p>View your favorite events</p>
+        </ion-label>
+        <ion-badge slot="end" color="primary">5</ion-badge>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="block" color="danger" (click)="logout()">
+      Logout
+    </ion-button>
+  </div>
+
+  <div class="not-logged-in" *ngIf="!isLoggedIn">
+    <ion-icon name="person-circle-outline" class="login-icon"></ion-icon>
+    <h2>Not Logged In</h2>
+    <p>Please login or create an account to view your profile</p>
+    <ion-button expand="block" (click)="navigateToLogin()">Login</ion-button>
+    <ion-button expand="block" fill="outline" (click)="navigateToSignup()">Sign Up</ion-button>
+  </div>
+</ion-content>

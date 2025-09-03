@@ -1,0 +1,118 @@
+/* Header styling */
+ion-header {
+  --background: transparent;
+}
+
+/* Toolbar styling with vibrant gradient background */
+ion-toolbar {
+  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* More vivid gradient */
+  --color: #ffffff; /* White text for readability */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3), 0 2px 8px rgba(255, 87, 127, 0.2); /* Colorful shadow */
+  padding: 0 clamp(0.5rem, 2vw, 1rem); /* Responsive padding */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Title styling */
+ion-title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem); /* Responsive font size */
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0 clamp(0.3rem, 1vw, 0.5rem);
+  flex-grow: 1; /* Allow title to take available space */
+}
+
+/* Buttons container styling */
+ion-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap */
+  gap: clamp(0.3rem, 1vw, 0.5rem); /* Responsive gap between buttons */
+}
+
+/* Button styling with floating animation */
+ion-button {
+  --background: transparent;
+  --color: #ffffff; /* White text/icons for contrast */
+  --border-radius: 8px;
+  --padding-start: clamp(0.3rem, 1vw, 0.5rem);
+  --padding-end: clamp(0.3rem, 1vw, 0.5rem);
+  font-size: clamp(0.7rem, 2vw, 0.9rem); /* Responsive font size */
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  animation: float 3s ease-in-out infinite; /* Floating animation */
+  transition: all 0.3s ease;
+}
+
+/* Floating animation for buttons */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+/* Hover effect with glowing highlight */
+ion-button:hover {
+  --background: rgba(255, 255, 255, 0.2);
+  --color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.6), 0 0 8px rgba(255, 87, 127, 0.5); /* Glowing highlight */
+}
+
+/* Icon styling */
+ion-icon {
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Responsive icon size */
+  margin-right: clamp(0.2rem, 0.5vw, 0.3rem);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  ion-toolbar {
+    padding: 0 clamp(0.3rem, 1.5vw, 0.8rem);
+    flex-direction: column; /* Stack title and buttons vertically */
+    align-items: stretch;
+  }
+
+  ion-title {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  ion-buttons {
+    justify-content: center; /* Center buttons when wrapped */
+    gap: clamp(0.2rem, 1vw, 0.4rem);
+  }
+
+  ion-button {
+    font-size: clamp(0.65rem, 1.8vw, 0.8rem);
+    --padding-start: clamp(0.2rem, 0.8vw, 0.4rem);
+    --padding-end: clamp(0.2rem, 0.8vw, 0.4rem);
+  }
+
+  ion-icon {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  ion-toolbar {
+    padding: 0 clamp(0.2rem, 1vw, 0.5rem);
+  }
+
+  ion-title {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+
+  ion-button {
+    font-size: clamp(0.6rem, 1.5vw, 0.7rem);
+    --padding-start: clamp(0.15rem, 0.6vw, 0.3rem);
+    --padding-end: clamp(0.15rem, 0.6vw, 0.3rem);
+  }
+
+  ion-icon {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    margin-right: clamp(0.1rem, 0.4vw, 0.2rem);
+  }
+}

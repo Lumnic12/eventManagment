@@ -1,0 +1,238 @@
+/* Main container styling for centered content */
+ion-content {
+
+  --background: linear-gradient(135deg, #e6f0ff 0%, #ffe6ec 100%);
+  /* ... other styles ... */
+justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Profile container styling for centered floating box */
+.profile-container {
+  max-width: 600px;
+  width: 100%;
+  min-height: auto; /* Size based on content */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 123, 255, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4); /* Enhanced colorful shadow */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto; /* Center horizontally and ensure top/bottom spacing */
+}
+
+/* Profile header styling */
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+  border-radius: 12px;
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 32px rgba(13, 253, 193, 0.5), 0 6px 16px rgba(212, 0, 255, 0.4); /* Enhanced colorful shadow */
+
+}
+
+/* Avatar styling */
+.profile-avatar {
+  margin: 0 auto 1rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  border: 3px solid #a41da8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.emoji-avatar {
+  font-size: 3rem;
+  line-height: 100px;
+}
+
+/* Typography for profile header */
+.profile-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0.5rem 0;
+}
+
+.profile-header p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Ion list styling */
+ion-list {
+  background: transparent;
+  margin-bottom: 2rem;
+}
+
+ion-item-divider {
+  --background: #f8f9fa;
+  --color: #333;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --min-height: 50px;
+}
+
+ion-item {
+  --background: #ffffff;
+  --border-radius: 8px;
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+ion-item:hover {
+  --background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+ion-label h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+ion-label p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+ion-icon {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+}
+
+ion-badge {
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --padding-top: 6px;
+  --padding-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Button styling */
+ion-button {
+  --border-radius: 8px;
+  --padding-start: 2rem;
+  --padding-end: 2rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+ion-button[color="danger"] {
+  --background: #dc3545;
+  --background-activated: #c82333;
+  --background-hover: #e4606d;
+}
+
+ion-button[fill="outline"] {
+  --border-color: #007bff;
+  --color: #007bff;
+}
+
+/* Not logged in section */
+.not-logged-in {
+  max-width: 400px;
+  width: 100%;
+  min-height: auto; /* Size based on content */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 123, 255, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4); /* Enhanced colorful shadow */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto; /* Center horizontally and ensure top/bottom spacing */
+  text-align: center;
+}
+
+.login-icon {
+  font-size: 4rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.not-logged-in h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.not-logged-in p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-container {
+    max-width: 100%;
+    margin: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4), 0 4px 10px rgba(255, 87, 127, 0.3);
+  }
+
+  .not-logged-in {
+    max-width: 100%;
+    margin: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4), 0 4px 10px rgba(255, 87, 127, 0.3);
+  }
+
+  .profile-header {
+    padding: 1rem;
+  }
+
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .emoji-avatar {
+    font-size: 2.5rem;
+    line-height: 80px;
+  }
+
+  .profile-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-header p {
+    font-size: 0.9rem;
+  }
+
+  .login-icon {
+    font-size: 3rem;
+  }
+
+  .not-logged-in h2 {
+    font-size: 1.3rem;
+  }
+
+  .not-logged-in p {
+    font-size: 0.9rem;
+  }
+}

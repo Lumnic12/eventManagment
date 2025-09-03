@@ -1,0 +1,335 @@
+/* Header styling */
+ion-header {
+  --background: transparent;
+}
+
+/* Toolbar styling with vibrant gradient */
+ion-toolbar {
+  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%);
+  --color: #ffffff; /* White text for readability */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3), 0 2px 8px rgba(255, 87, 127, 0.2); /* Colorful shadow */
+  padding: 0 clamp(0.4rem, 1.5vw, 0.8rem); /* Reduced padding */
+  display: flex;
+  align-items: center;
+}
+
+/* Title styling */
+ion-title {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem); /* Slightly smaller font */
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  padding: 0 clamp(0.2rem, 0.8vw, 0.4rem);
+}
+
+/* Back button styling */
+ion-back-button {
+  --color: #ffffff;
+  --icon-font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+}
+
+/* No events section styling */
+.no-events {
+  max-width: 350px; /* Smaller box */
+  width: 100%;
+  min-height: auto;
+  background: #ffffff;
+  border-radius: 10px; /* Slightly smaller border radius */
+  box-shadow: 0 10px 28px rgba(0, 123, 255, 0.5), 0 5px 14px rgba(255, 87, 127, 0.4); /* Adjusted shadow */
+  padding: 1.5rem; /* Reduced padding */
+  margin: 1.5rem auto; /* Centered with less margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.no-events p {
+  font-size: 0.9rem; /* Smaller font */
+  color: #333;
+  margin: 0;
+}
+
+.no-events ion-button {
+  --background: #007bff;
+  --background-activated: #0056b3;
+  --background-hover: #0069d9;
+  --border-radius: 6px; /* Smaller radius */
+  --padding-start: 1.5rem; /* Reduced padding */
+  --padding-end: 1.5rem;
+  font-weight: 500;
+  font-size: 0.85rem; /* Smaller font */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.no-events ion-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.no-events ion-button:hover::before {
+  width: 250px;
+  height: 250px;
+}
+
+.no-events ion-button:active::before {
+  width: 0;
+  height: 0;
+}
+
+/* Event list styling */
+.event-list {
+  max-width: 1000px; /* Reduced max-width for compact layout */
+  margin: 0 auto;
+  padding: 0.75rem; /* Reduced padding */
+}
+
+/* Event grid styling for box format */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Smaller card width */
+  gap: 0.75rem; /* Reduced gap */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.75rem;
+}
+
+/* Event card styling */
+.event-card {
+  background: #ffffff;
+  border-radius: 10px; /* Smaller radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin: 0; /* No extra margin to keep grid tight */
+}
+
+.event-card:hover {
+  transform: translateY(-3px); /* Slightly smaller hover lift */
+  box-shadow: 0 5px 14px rgba(0, 123, 255, 0.3), 0 2px 7px rgba(255, 87, 127, 0.2);
+}
+
+.event-card img {
+  width: 100%;
+  height: 120px; /* Smaller image height */
+  object-fit: cover;
+}
+
+.event-card ion-card-header {
+  padding: 0.75rem; /* Reduced padding */
+}
+
+.event-card ion-card-title {
+  font-size: 1.2rem; /* Smaller font */
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.event-card ion-card-subtitle {
+  font-size: 0.8rem; /* Smaller font */
+  color: #666;
+}
+
+.event-card ion-card-content {
+  padding: 0.75rem; /* Reduced padding */
+  font-size: 0.85rem; /* Smaller font */
+  color: #333;
+}
+
+.event-card ion-card-content p {
+  margin: 0.3rem 0; /* Reduced margin */
+}
+
+.event-card ion-card-content ion-icon {
+  color: #4a4a4a;
+  font-size: 1rem; /* Smaller icon */
+  margin-right: 0.4rem;
+}
+
+/* Category-specific badge styling */
+.event-card ion-card-content p:nth-child(3) {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.event-card ion-card-content p:nth-child(3)::after {
+  content: attr(data-category);
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.15rem 0.6rem; /* Smaller badge */
+  border-radius: 10px;
+  font-size: 0.7rem; /* Smaller font */
+  color: #ffffff;
+}
+
+.event-card ion-card-content p:nth-child(3)[data-category="Music"]::after {
+  background-color: #007bff; /* Blue for Music */
+}
+
+.event-card ion-card-content p:nth-child(3)[data-category="Technology"]::after {
+  background-color: #28a745; /* Green for Technology */
+}
+
+.event-card ion-card-content p:nth-child(3)[data-category="Food"]::after {
+  background-color: #dc3545; /* Red for Food */
+}
+
+.event-card ion-card-content p:nth-child(3)[data-category="Art"]::after {
+  background-color: #ff6b81; /* Pink for Art */
+}
+
+.event-card ion-card-content p:nth-child(3)[data-category="Sports"]::after {
+  background-color: #ffc107; /* Yellow for Sports */
+}
+
+.event-card ion-card-content p:nth-child(3)[data-category="Business"]::after {
+  background-color: #6f42c1; /* Purple for Business */
+}
+
+/* Button styling */
+ion-button {
+  --border-radius: 6px; /* Smaller radius */
+  --padding-start: 1.5rem; /* Reduced padding */
+  --padding-end: 1.5rem;
+  font-weight: 500;
+  font-size: 0.85rem; /* Smaller font */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+ion-button[color="danger"] {
+  --border-color: #dc3545;
+  --color: #dc3545;
+  --background-activated: rgba(220, 53, 69, 0.1);
+  --background-hover: rgba(220, 53, 69, 0.05);
+}
+
+ion-button[color="danger"]::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(220, 53, 69, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+ion-button[color="danger"]:hover::before {
+  width: 250px;
+  height: 250px;
+}
+
+ion-button[color="danger"]:active::before {
+  width: 0;
+  height: 0;
+}
+
+/* Toast styling */
+ion-toast {
+  --background: rgba(220, 53, 69, 0.9); /* Red background matching danger color */
+  --color: #ffffff;
+  --border-radius: 6px; /* Smaller radius */
+  --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-size: 0.8rem; /* Smaller font */
+  padding: 0.4rem 0.8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .no-events {
+    max-width: 100%;
+    margin: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4), 0 4px 10px rgba(255, 87, 127, 0.3);
+  }
+
+  .event-list {
+    padding: 0.5rem;
+  }
+
+  .event-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Even smaller cards */
+    gap: 0.5rem;
+  }
+
+  .event-card img {
+    height: 100px; /* Smaller image */
+  }
+
+  .event-card ion-card-title {
+    font-size: 1rem;
+  }
+
+  .event-card ion-card-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .event-card ion-card-content {
+    font-size: 0.8rem;
+  }
+
+  .event-card ion-card-content p:nth-child(3)::after {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.5rem;
+  }
+
+  ion-title {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .no-events {
+    padding: 0.75rem;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+
+  .event-card img {
+    height: 90px;
+  }
+
+  .event-card ion-card-title {
+    font-size: 0.9rem;
+  }
+
+  .event-card ion-card-content {
+    font-size: 0.75rem;
+  }
+
+  ion-button {
+    --padding-start: 1rem;
+    --padding-end: 1rem;
+    font-size: 0.8rem;
+  }
+
+  ion-title {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  }
+
+  ion-toast {
+    font-size: 0.75rem;
+  }
+}
