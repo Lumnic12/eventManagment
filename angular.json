@@ -35,18 +35,23 @@
                 "output": "assets"
               }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss"],
+            "styles": [
+              "src/global.scss",
+              "src/theme/variables.scss"
+            ],
             "scripts": [],
             "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
+
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "6kb",
+                    "maximumError": "8kb"
+                  },
+
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
@@ -109,7 +114,10 @@
                 "output": "assets"
               }
             ],
-            "styles": ["src/global.scss", "src/theme/variables.scss"],
+            "styles": [
+              "src/global.scss",
+              "src/theme/variables.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -122,7 +130,10 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
