@@ -1,0 +1,7 @@
+{
+  "name": "annu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
