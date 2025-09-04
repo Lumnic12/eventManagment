@@ -32,10 +32,7 @@
 
 <ion-content>
   <div *ngIf="selectedEvent" class="event-details">
-    <ion-button fill="clear" (click)="closeEventDetails()">
-      <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
-      Back to Events
-    </ion-button>
+
 
     <ion-card>
       <img [src]="selectedEvent.image" alt="{{selectedEvent.title}}">
@@ -70,6 +67,10 @@
             (click)="unregisterFromEvent(selectedEvent)">
             Cancel Registration
           </ion-button>
+              <ion-button fill="clear" (click)="closeEventDetails()">
+      <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+      Back to Events
+    </ion-button>
         </div>
       </ion-card-content>
     </ion-card>
