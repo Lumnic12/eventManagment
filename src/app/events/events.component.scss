@@ -1,8 +1,8 @@
-/* 🌈 Main content */
-ion-content {
-  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%);
-  padding: 1rem;
-}
+// /* 🌈 Main content */
+// ion-content {
+//   --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%);
+//   padding: 1rem;
+// }
 
 /* 🌈 Header & Toolbar */
 ion-header {
@@ -10,7 +10,7 @@ ion-header {
 }
 
 ion-toolbar {
-  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%);
+  // --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%);
   --color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3),
               0 2px 8px rgba(255, 87, 127, 0.2);
@@ -47,16 +47,17 @@ ion-searchbar:hover {
 
 /* 🟦 Segments */
 ion-segment {
-  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%);
+  // --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%);
   display: flex;
   flex-wrap: wrap;
+  color: black;
 }
 
 ion-segment-button {
   --background: transparent;
-  --color: #ffffff;
-  --color-checked: #ffffff;
-  --background-checked: rgba(0, 123, 255, 0.3);
+  --color: #000000;
+  --color-checked: #ff0000;
+  --background-checked: rgba(0, 107, 221, 0.3);
   font-size: clamp(0.8rem, 2vw, 1rem);
   font-weight: 500;
   text-transform: uppercase;
@@ -65,8 +66,8 @@ ion-segment-button {
 }
 
 ion-segment-button:hover {
-  --background: rgba(255, 255, 255, 0.2);
-  --box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  --background: rgba(255, 0, 0, 0.2);
+  --box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
 }
 
 /* Floating animation */
@@ -151,7 +152,6 @@ ion-card-content {
   padding: 1rem;
 }
 
-/* 🔘 Buttons */
 ion-button {
   --border-radius: 8px;
   --padding-start: 2rem;

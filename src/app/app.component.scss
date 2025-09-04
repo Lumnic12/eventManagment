@@ -1,13 +1,13 @@
-/* Header styling */
-ion-toolbar {
-    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
+// /* Header styling */
+// ion-toolbar {
+//     --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
 
-}
+// }
 
 
 /* Toolbar styling with vibrant gradient background */
 ion-toolbar {
-  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* More vivid gradient */
+  // --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* More vivid gradient */
    --color: #ffffff;
  /* White text for readability */
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3), 0 2px 8px rgba(255, 87, 127, 0.2); /* Colorful shadow */
@@ -122,7 +122,3 @@ ion-icon {
   }
 }
 
-
-ion-header {
-    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
-}

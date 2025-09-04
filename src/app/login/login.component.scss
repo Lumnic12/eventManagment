@@ -1,7 +1,7 @@
 /* Main container styling for centered content */
 ion-content {
   // --background: linear-gradient(135deg, #e6f0ff 0%, #ffe6ec 100%);
-    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
+    // --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
 
   display: flex;
   justify-content: center;
@@ -55,7 +55,8 @@ ion-header {
   width: 100%;
   min-height: auto;
   /* Size based on content */
-  background: #ffffff;
+  // background: #ffffff;
+  
   border-radius: 12px;
   box-shadow: 0 12px 32px rgba(0, 123, 255, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4);
   /* Enhanced colorful shadow */
