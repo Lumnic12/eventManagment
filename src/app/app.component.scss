@@ -1,6 +1,8 @@
 /* Header styling */
 ion-header {
   --background: transparent;
+    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
+
 }
 
 /* Toolbar styling with vibrant gradient background */
@@ -73,24 +75,24 @@ ion-icon {
     flex-direction: column; /* Stack title and buttons vertically */
     align-items: stretch;
   }
-
+  
   ion-title {
     font-size: clamp(1.1rem, 2.5vw, 1.3rem);
     text-align: center;
     padding: 0.5rem 0;
   }
-
+  
   ion-buttons {
     justify-content: center; /* Center buttons when wrapped */
     gap: clamp(0.2rem, 1vw, 0.4rem);
   }
-
+  
   ion-button {
     font-size: clamp(0.65rem, 1.8vw, 0.8rem);
     --padding-start: clamp(0.2rem, 0.8vw, 0.4rem);
     --padding-end: clamp(0.2rem, 0.8vw, 0.4rem);
   }
-
+  
   ion-icon {
     font-size: clamp(0.9rem, 1.8vw, 1.1rem);
   }
@@ -100,19 +102,21 @@ ion-icon {
   ion-toolbar {
     padding: 0 clamp(0.2rem, 1vw, 0.5rem);
   }
-
+  
   ion-title {
     font-size: clamp(1rem, 2vw, 1.2rem);
   }
-
+  
   ion-button {
     font-size: clamp(0.6rem, 1.5vw, 0.7rem);
     --padding-start: clamp(0.15rem, 0.6vw, 0.3rem);
     --padding-end: clamp(0.15rem, 0.6vw, 0.3rem);
   }
-
+  
   ion-icon {
     font-size: clamp(0.8rem, 1.5vw, 1rem);
     margin-right: clamp(0.1rem, 0.4vw, 0.2rem);
   }
 }
+
+

@@ -1,26 +1,70 @@
 /* Main container styling for centered content */
 ion-content {
-  --background: linear-gradient(135deg, #e6f0ff 0%, #ffe6ec 100%);
+  // --background: linear-gradient(135deg, #e6f0ff 0%, #ffe6ec 100%);
+    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
+
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 1rem;
+   cursor: pointer;
+  animation: float 3s ease-in-out infinite;
 }
+ion-header {
+  display: none; /* Hide the default Ionic header */
+}
+
+.logo-container {
+  background: linear-gradient(135deg, #f74d4d 0%, #ff6b81 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Gradient glow shadows */
+  text-shadow: 
+    2px 2px 6px rgba(77, 171, 247, 0.7),
+    -2px -2px 6px rgba(255, 107, 129, 0.7);
+
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite; /* floating animation */
+}
+
+/* Hover: stronger glow */
+.logo-container:hover {
+  text-shadow: 
+    4px 4px 12px rgba(77, 171, 247, 0.9), 
+    -4px -4px 12px rgba(255, 107, 129, 0.9);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* float upward */
+  }
+}
+
+
+
 
 /* Login container styling for centered floating box */
 .login-container {
   max-width: 400px;
   width: 100%;
-  min-height: auto; /* Size based on content */
+  min-height: auto;
+  /* Size based on content */
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 12px 32px rgba(0, 123, 255, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4); /* Enhanced colorful shadow */
+  box-shadow: 0 12px 32px rgba(0, 123, 255, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4);
+  /* Enhanced colorful shadow */
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem auto; /* Center horizontally and ensure top/bottom spacing */
+  margin: 2rem auto;
+  /* Center horizontally and ensure top/bottom spacing */
 }
 
 /* Logo container styling */
@@ -38,9 +82,17 @@ ion-content {
 
 /* Pulse animation for logo */
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .logo-container h1 {

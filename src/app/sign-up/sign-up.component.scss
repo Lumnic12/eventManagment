@@ -6,7 +6,21 @@ ion-content {
   align-items: center;
   min-height: 100vh;
   padding: 1rem;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite; /* floating animation */
 }
+ion-header {
+  display: none; /* Hide the default Ionic header */
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* float upward */
+  }
+}
+
 
 /* Signup container styling for centered floating box */
 .signup-container {
