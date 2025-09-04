@@ -1,11 +1,13 @@
-ion-header {
-  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 50%, #9b5de5 100%);
+ion-toolbar {
+    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
 }
 ion-content {
-  --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 50%, #9b5de5 100%);
+    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
   padding: 20px;
 }
-
+.event-list {
+    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 50%, #9b5de5 100%);
+}
 /* 🔹 No Events Message */
 .no-events {
   text-align: center;
@@ -52,7 +54,7 @@ ion-content {
 
   /* 🔹 Event Card Styling */
   .event-card {
-    --background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%);
     border-radius: 15px;
     overflow: hidden;
     width: 100%;

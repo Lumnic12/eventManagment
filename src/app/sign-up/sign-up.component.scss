@@ -208,3 +208,35 @@ ion-button[fill="outline"] {
     font-size: 0.8rem;
   }
 }
+
+
+.logo-container {
+  background: linear-gradient(135deg, #ac3a3a 0%, #ff6b81 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Gradient glow shadows */
+  text-shadow: 
+    2px 2px 6px rgba(77, 171, 247, 0.7),
+    -2px -2px 6px rgba(255, 107, 129, 0.7);
+
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite; /* floating animation */
+}
+
+/* Hover: stronger glow */
+.logo-container:hover {
+  text-shadow: 
+    4px 4px 12px rgba(77, 171, 247, 0.9), 
+    -4px -4px 12px rgba(255, 107, 129, 0.9);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* float upward */
+  }
+}
