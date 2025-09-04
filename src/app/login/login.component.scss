@@ -255,3 +255,9 @@ ion-button[disabled] {
     --padding-end: 1.5rem;
   }
 }
+
+.error-msg {
+  color: red;
+  font-size: 13px;
+  margin: 4px 0 10px 12px;
+}

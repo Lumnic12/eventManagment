@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="white" >
+  <ion-toolbar color="white">
     <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,25 +9,48 @@
     <div class="logo-container">
       <ion-icon name="calendar" class="logo-icon"></ion-icon>
       <h1>Eventify</h1>
-      <p >Sign in to continue</p>
+      <p>Sign in to continue</p>
     </div>
 
     <form (ngSubmit)="login()">
+      <!-- Email field -->
       <ion-item class="ion-margin-bottom">
         <ion-label position="floating">Email</ion-label>
-        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+        <ion-input 
+          type="email" 
+          [(ngModel)]="email" 
+          name="email" 
+          required 
+          (blur)="validateEmail()">
+        </ion-input>
       </ion-item>
+      <div *ngIf="emailError" class="error-msg">{{ emailError }}</div>
 
+      <!-- Password field -->
       <ion-item class="ion-margin-bottom">
         <ion-label position="floating">Password</ion-label>
-        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+        <ion-input 
+          type="password" 
+          [(ngModel)]="password" 
+          name="password" 
+          required 
+          (blur)="validatePassword()">
+        </ion-input>
       </ion-item>
+      <div *ngIf="passwordError" class="error-msg">{{ passwordError }}</div>
 
+      <!-- Forgot password -->
       <div class="forgot-password">
         <a href="#">Forgot Password?</a>
       </div>
 
-      <ion-button expand="block" type="submit" [disabled]="!email || !password">LOGIN</ion-button>
+      <!-- Login button -->
+      <ion-button expand="block" type="submit" [disabled]="!email || !password">
+        LOGIN
+      </ion-button>
+
+      <!-- General login error -->
+      <div *ngIf="loginError" class="error-msg ion-text-center">{{ loginError }}</div>
     </form>
 
     <div class="signup-link">

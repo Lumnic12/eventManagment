@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { addIcons } from 'ionicons';
 import { homeOutline, logInOutline, personCircleOutline, calendarOutline, personAddOutline } from 'ionicons/icons';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
