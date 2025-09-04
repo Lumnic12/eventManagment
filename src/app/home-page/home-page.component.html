@@ -5,22 +5,23 @@
   </div>
 
   <!-- Categories Section -->
-  <div class="categories-section">
-    <h2>Browse by Category</h2>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="6" size-md="4" size-lg="3" *ngFor="let category of categories">
-          <ion-card routerLink="/events">
-            <img [src]="category.image" alt="{{ category.name }}">
-            <ion-card-header>
-              <ion-icon [name]="category.icon" class="category-icon"></ion-icon>
-              <ion-card-title>{{ category.name }}</ion-card-title>
-            </ion-card-header>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
+<div class="categories-section">
+  <h2>Browse by Category</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-md="4" size-lg="3" *ngFor="let category of categories">
+        <ion-card routerLink="/events">
+          <img [src]="category.image" alt="{{ category.name }}">
+          <ion-card-header>
+            <ion-icon [name]="category.icon" class="category-icon"></ion-icon>
+            <ion-card-title>{{ category.name }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
 
   <!-- Event Carousel -->
   <div class="event-carousel">
