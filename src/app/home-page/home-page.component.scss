@@ -1,4 +1,18 @@
 /* ✅ Carousel Styles */
+.welcome-section{
+    background: linear-gradient(135deg, #f74d4d 0%, #ff6b81 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+  /* Gradient glow shadows */
+  text-shadow: 
+    2px 2px 6px rgba(77, 247, 224, 0.7),
+    -2px -2px 6px rgba(255, 46, 78, 0.7);
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite; /* floating animation */
+}
+
 .carousel-container {
   width: 100%;
   overflow: hidden;

@@ -41,58 +41,58 @@ export class EventsComponent implements OnInit {
     {
       id: 1,
       title: 'Summer Music Festival',
-      date: 'June 15, 2023',
+      date: 'June 15, 2025',
       location: 'Central Park, New York',
       category: 'Music',
       description: 'Join us for a day of amazing music performances!',
-      image: 'https://as2.ftcdn.net/v2/jpg/02/16/94/65/1000_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg'
+      image: 'https://tse2.mm.bing.net/th/id/OIP.730Wi8TaGFjgl-RdBztH-QHaEK?rs=1&pid=ImgDetMain&o=7&rm=3'
     },
     {
       id: 2,
       title: 'Jazz Night',
-      date: 'June 25, 2023',
+      date: 'June 25, 2025',
       location: 'Blue Note, New York',
       category: 'Music',
       description: 'Enjoy an evening of smooth jazz and great atmosphere.',
-      image: 'https://picsum.photos/500/300?random=11'
+      image: 'https://tse2.mm.bing.net/th/id/OIP.k1n0d4plUx6GRMmmUH4GmgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3'
     },
     {
       id: 3,
       title: 'Rock Concert',
-      date: 'July 5, 2023',
+      date: 'July 5, 2025',
       location: 'Madison Square Garden, New York',
       category: 'Music',
       description: 'Experience the energy of live rock music!',
-      image: 'https://picsum.photos/500/300?random=12'
+      image: 'https://tse4.mm.bing.net/th/id/OIP.-G5_Ns0TR5t2F2p5QOmlXAHaE6?rs=1&pid=ImgDetMain&o=7&rm=3'
     },
     {
       id: 4,
       title: 'Classical Symphony',
-      date: 'July 15, 2023',
+      date: 'July 15, 2025',
       location: 'Symphony Hall, Boston',
       category: 'Music',
       description: 'Immerse yourself in the beauty of classical music.',
-      image: 'https://picsum.photos/500/300?random=13'
+      image: 'https://tse1.mm.bing.net/th/id/OIP.6-D7rKc8NXs3Ztv-DN501gHaE6?rs=1&pid=ImgDetMain&o=7&rm=3'
     },
-    
+    //https://picsum.photos/500/300?random=13
     // Technology Events
     {
       id: 5,
-      title: 'Tech Conference 2023',
-      date: 'July 10, 2023',
+      title: 'Tech Conference 2025',
+      date: 'July 10, 2025',
       location: 'Convention Center, San Francisco',
       category: 'Technology',
       description: 'Learn about the latest technologies and innovations.',
-      image: 'https://www.conference2go.com/wp-content/uploads/2021/04/education-2.png'
+      image: 'https://static.vecteezy.com/system/resources/previews/041/180/849/large_2x/technology-event-poster-editor_template.jpeg?last_updated=1710863360'
     },
     {
       id: 6,
       title: 'AI Workshop',
-      date: 'July 20, 2023',
+      date: 'July 20, 2025',
       location: 'Tech Hub, San Francisco',
       category: 'Technology',
       description: 'Hands-on workshop on artificial intelligence applications.',
-      image: 'https://www.conference2go.com/wp-content/uploads/2021/04/education-2.png'
+      image: 'https://tse1.mm.bing.net/th/id/OIP.o0MIaKXJl6Nb5NLTl76xtwHaDm?rs=1&pid=ImgDetMain&o=7&rm=3'
     },
     {
       id: 7,
@@ -101,7 +101,7 @@ export class EventsComponent implements OnInit {
       location: 'Innovation Center, Seattle',
       category: 'Technology',
       description: '48-hour coding challenge with amazing prizes!',
-      image: 'https://img.freepik.com/premium-vector/education-concept-illustration-idea-learning-new_277904-1052.jpg?w=740'
+      image: 'https://media.istockphoto.com/id/1061007660/photo/hackathon-technology-threat-online-coding-2d-illustration.jpg?s=612x612&w=0&k=20&c=tFf52_rANquxEDS_ewMSaY0-O1bqqRz5QItP8CSsOG0='
     },
     {
       id: 8,
@@ -148,7 +148,7 @@ export class EventsComponent implements OnInit {
       location: 'Green Space, Portland',
       category: 'Food',
       description: 'Discover delicious plant-based food options.',
-      image: 'https://tse3.mm.bing.net/th/id/OIP.DswyoLznHFwxAP1Mw7U4FAHaHa?w=671&h=671&rs=1&pid=ImgDetMain&o=7&rm=3'
+      image: 'https://tse4.mm.bing.net/th/id/OIP.oFlI1ZP7avQ_4dQtUrU8qwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3'
     },
     
     // Art Events
