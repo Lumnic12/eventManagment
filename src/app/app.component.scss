@@ -1,14 +1,15 @@
 /* Header styling */
 ion-toolbar {
-  --background: transparent;
     --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
 
 }
 
+
 /* Toolbar styling with vibrant gradient background */
 ion-toolbar {
   --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* More vivid gradient */
-  --color: #ffffff; /* White text for readability */
+   --color: #ffffff;
+ /* White text for readability */
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3), 0 2px 8px rgba(255, 87, 127, 0.2); /* Colorful shadow */
   padding: 0 clamp(0.5rem, 2vw, 1rem); /* Responsive padding */
   display: flex;
@@ -46,6 +47,8 @@ ion-button {
   overflow: hidden;
   animation: float 3s ease-in-out infinite; /* Floating animation */
   transition: all 0.3s ease;
+      font-weight: bold;
+
 }
 
 /* Floating animation for buttons */
@@ -120,3 +123,6 @@ ion-icon {
 }
 
 
+ion-header {
+    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
+}

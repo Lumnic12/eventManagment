@@ -14,7 +14,7 @@
   </div>
 
   <div *ngIf="registeredEvents.length > 0" class="event-list">
-    <ion-list>
+    <ion-list class="no">
       <ion-item *ngFor="let event of registeredEvents">
         <ion-card class="event-card">
           <img [src]="event.image" alt="{{event.title}}">
