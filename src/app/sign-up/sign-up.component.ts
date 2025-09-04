@@ -2,7 +2,7 @@ import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonButtons, IonCard, IonInput, IonCardContent, IonToolbar, IonCardHeader, IonContent, IonButton, IonBackButton, IonTitle, IonItem, IonLabel, IonNote, IonIcon, IonHeader } from "@ionic/angular/standalone";
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormsModule, AbstractControl, ValidationErrors } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 // Custom validator for password matching
 function passwordMatchValidator(control: AbstractControl): ValidationErrors | null {
@@ -39,7 +39,8 @@ function passwordMatchValidator(control: AbstractControl): ValidationErrors | nu
     IonLabel,
     IonNote,
     IonIcon,
-    IonHeader
+    IonHeader,
+    RouterLink
   ]
 })
 export class SignUpComponent implements OnInit {
