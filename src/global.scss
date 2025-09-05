@@ -17,7 +17,7 @@
 
 }
 ion-button {
-    // --background: #ff6b81;
+    // --background: #d16573;
     --color: #ff0000;
     border-radius: 8px;
     font-weight: bold;
@@ -29,11 +29,14 @@ ion-button {
     min-width: 120px;
     height: 40px;
     font-size: 14px;
-   
-
-    
+    text-transform: uppercase;    
     &:hover {
       transform: scale(1.05);
     }
   }
+
+  .no{
+  --background: red;
+  --color: rgb(0, 0, 0);
+}
 

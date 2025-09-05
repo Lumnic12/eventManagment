@@ -15,6 +15,7 @@ export class ProfileComponent implements OnInit {
   userData: any = null;
   isLoggedIn = false;
   userEmoji = '😎'; // Default emoji for user
+  colo:string="red"
 
   constructor(private router: Router, private authService: AuthService) { }
 

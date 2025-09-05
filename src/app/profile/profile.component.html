@@ -4,11 +4,11 @@
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
     <ion-title>Profile</ion-title>
-    <ion-buttons slot="end">
-      <ion-button (click)="logout()">
+    <!-- <ion-buttons slot="end">
+      <ion-button [ngClass]="colo" (click)="logout()">
         <ion-icon name="log-out-outline"></ion-icon>
       </ion-button>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
 
@@ -28,7 +28,7 @@
       </ion-item-divider>
 
       <ion-item>
-        <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-icon name="person-circle-outline"></ion-icon>
         <ion-label>
           <h2>Name</h2>
           <p>{{ userData.name }}</p>

@@ -1,6 +1,6 @@
-ion-header {
-    --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
-}
+// ion-header {
+//     --background: linear-gradient(135deg, #4dabf7 0%, #ff6b81 100%); /* Vibrant gradient matching nav bar */
+// }
 
 /* Main container styling for centered content */
 ion-content {
@@ -51,7 +51,7 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   background-color: #e0e0e0;
-  border: 3px solid #a41da8;
+  border: 3px solid #00ff37;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -133,13 +133,20 @@ ion-badge {
 
 /* Button styling */
 ion-button {
-  --border-radius: 8px;
+  --border-radius: 15px;
   --padding-start: 2rem;
   --padding-end: 2rem;
   margin: 0.5rem 0;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3), 0 2px 8px rgba(255, 87, 127, 0.2); /* Colorful shadow */
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  height: 45px;
 }
 
 ion-button[color="danger"] {
@@ -160,7 +167,7 @@ ion-button[fill="outline"] {
   min-height: auto; /* Size based on content */
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 12px 32px rgba(0, 123, 255, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4); /* Enhanced colorful shadow */
+  box-shadow: 0 12px 32px rgba(207, 16, 16, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4); /* Enhanced colorful shadow */
   padding: 2rem;
   display: flex;
   flex-direction: column;
