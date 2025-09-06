@@ -1,18 +1,59 @@
-/* ✅ Carousel Styles */
+/* ✅ Hero / Welcome Section */
 .welcome-section {
+  text-align: center;
+  margin: 4rem auto 3rem;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+/* Main Heading */
+.welcome-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+
   background: linear-gradient(135deg, #f74d4d 0%, #ff6b81 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  /* Subtle glow */
+  text-shadow: 0 4px 12px rgba(255, 107, 129, 0.3);
 
-  /* Gradient glow shadows */
-  text-shadow:
-    2px 2px 6px rgba(77, 247, 224, 0.7),
-    -2px -2px 6px rgba(255, 46, 78, 0.7);
-  cursor: pointer;
-  animation: float 3s ease-in-out infinite;
-  /* floating animation */
+  animation: float 4s ease-in-out infinite;
 }
+
+/* Subheading / Tagline */
+.welcome-section p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Floating animation for heading */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .welcome-section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-section p {
+    font-size: 1rem;
+  }
+}
+
 
 .carousel-container {
   width: 100%;
