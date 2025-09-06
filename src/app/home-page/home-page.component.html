@@ -7,8 +7,8 @@
   <!-- Categories Section -->
 <div class="categories-section">
   <h2>Browse by Category</h2>
-  <ion-grid>
-    <ion-row>
+  <ion-grid class="annu">
+    <ion-row class="sar">
       <ion-col size="6" size-md="4" size-lg="3" *ngFor="let category of categories">
         <ion-card routerLink="/events">
           <img [src]="category.image" alt="{{ category.name }}">

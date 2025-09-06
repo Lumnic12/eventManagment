@@ -86,7 +86,14 @@
 .categories-section h2 {
   margin-bottom: 1rem;
 }
+.annu{
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.sar{
+  display: flex;
 
+}
 .categories-section ion-card {
   display: flex;
   margin: 0 auto;
