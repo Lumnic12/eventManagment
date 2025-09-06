@@ -1,16 +1,17 @@
 /* ✅ Carousel Styles */
-.welcome-section{
-    background: linear-gradient(135deg, #f74d4d 0%, #ff6b81 100%);
+.welcome-section {
+  background: linear-gradient(135deg, #f74d4d 0%, #ff6b81 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 
   /* Gradient glow shadows */
-  text-shadow: 
+  text-shadow:
     2px 2px 6px rgba(77, 247, 224, 0.7),
     -2px -2px 6px rgba(255, 46, 78, 0.7);
   cursor: pointer;
-  animation: float 3s ease-in-out infinite; /* floating animation */
+  animation: float 3s ease-in-out infinite;
+  /* floating animation */
 }
 
 .carousel-container {
@@ -34,6 +35,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -64,7 +66,7 @@
   padding: 20px;
   background-color: #f8f8f8;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .welcome-section h1 {
@@ -86,14 +88,17 @@
 .categories-section h2 {
   margin-bottom: 1rem;
 }
-.annu{
+
+.annu {
   flex-wrap: wrap;
   flex-direction: column;
 }
-.sar{
+
+.sar {
   display: flex;
 
 }
+
 .categories-section ion-card {
   display: flex;
   margin: 0 auto;
@@ -101,15 +106,16 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: float 3s ease-in-out infinite; /* floating effect */
+  animation: float 3s ease-in-out infinite;
+  /* floating effect */
 }
 
 .categories-section ion-card:hover {
   transform: scale(1.08) translateY(-6px);
   box-shadow: 0 8px 20px rgba(77, 171, 247, 0.5),
-              0 8px 20px rgba(255, 107, 129, 0.5);
+    0 8px 20px rgba(255, 107, 129, 0.5);
 }
 
 .categories-section ion-card img {
@@ -138,8 +144,15 @@
 
 /* ✅ Floating Animation */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 /* ✅ Force Desktop Grid */
@@ -206,7 +219,7 @@
 .event-carousel ion-card:hover {
   transform: scale(1.08) translateY(-6px);
   box-shadow: 0 8px 20px rgba(77, 171, 247, 0.5),
-              0 8px 20px rgba(255, 107, 129, 0.5);
+    0 8px 20px rgba(255, 107, 129, 0.5);
 }
 
 .event-carousel ion-card img {
@@ -240,7 +253,7 @@
 .featured-events ion-card:hover {
   transform: scale(1.08) translateY(-6px);
   box-shadow: 0 8px 20px rgba(77, 171, 247, 0.5),
-              0 8px 20px rgba(255, 107, 129, 0.5);
+    0 8px 20px rgba(255, 107, 129, 0.5);
 }
 
 .featured-events ion-card img {
@@ -288,26 +301,32 @@
     max-width: 100%;
   }
 }
+
 .carousel-slides {
   display: flex;
   width: max-content;
   animation: slideLoop 30s linear infinite;
 }
+
 @keyframes slideLoop {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-50%); /* Moves only half, since we duplicated */
+    transform: translateX(-50%);
+    /* Moves only half, since we duplicated */
   }
 }
+
 icon-button {
   --background: #007bff;
   --color: #fff;
   border-radius: 50px;
   padding: 10px 20px;
   font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(0,123,255,0.3); /* Soft shadow */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  /* Soft shadow */
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -315,7 +334,8 @@ icon-button {
   gap: 8px;
   position: relative;
   overflow: hidden;
-  animation: float 3s ease-in-out infinite; /* Floating animation */
+  animation: float 3s ease-in-out infinite;
+  /* Floating animation */
   transition: all 0.3s ease;
-      font-weight: bold;
+  font-weight: bold;
 }

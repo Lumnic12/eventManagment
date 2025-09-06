@@ -5,22 +5,22 @@
   </div>
 
   <!-- Categories Section -->
-<div class="categories-section">
-  <h2>Browse by Category</h2>
-  <ion-grid class="annu">
-    <ion-row class="sar">
-      <ion-col size="6" size-md="4" size-lg="3" *ngFor="let category of categories">
-        <ion-card routerLink="/events">
-          <img [src]="category.image" alt="{{ category.name }}">
-          <ion-card-header>
-            <ion-icon [name]="category.icon" class="category-icon"></ion-icon>
-            <ion-card-title>{{ category.name }}</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</div>
+  <div class="categories-section">
+    <h2>Browse by Category</h2>
+    <ion-grid class="annu">
+      <ion-row class="sar">
+        <ion-col size="6" size-md="4" size-lg="3" *ngFor="let category of categories">
+          <ion-card routerLink="/events">
+            <img [src]="category.image" alt="{{ category.name }}">
+            <ion-card-header>
+              <ion-icon [name]="category.icon" class="category-icon"></ion-icon>
+              <ion-card-title>{{ category.name }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 
   <!-- Event Carousel -->
@@ -38,12 +38,13 @@
             <ion-card-content>
               {{ event.description }}
             </ion-card-content>
-            <ion-button  fill="clear" routerLink="/events">View Details</ion-button>
+            <ion-button fill="clear" routerLink="/events">View Details</ion-button>
           </ion-card>
         </div>
         <div class="carousel-slide">
           <ion-card>
-            <img src="https://www.japanrailclub.com/wp-content/uploads/2024/11/6.Summer-Festival.jpg" alt="Summer Festival">
+            <img src="https://www.japanrailclub.com/wp-content/uploads/2024/11/6.Summer-Festival.jpg"
+              alt="Summer Festival">
             <ion-card-header>
               <ion-card-subtitle>July 25, 2023</ion-card-subtitle>
               <ion-card-title>Summer Festival</ion-card-title>
@@ -56,7 +57,9 @@
         </div>
         <div class="carousel-slide">
           <ion-card>
-            <img src="https://eventacademy.com/wp-content/uploads/2018/11/cambridge-corporate-photographer-io-2016-003.jpg" alt="Business Conference">
+            <img
+              src="https://eventacademy.com/wp-content/uploads/2018/11/cambridge-corporate-photographer-io-2016-003.jpg"
+              alt="Business Conference">
             <ion-card-header>
               <ion-card-subtitle>August 15, 2023</ion-card-subtitle>
               <ion-card-title>Business Conference</ion-card-title>

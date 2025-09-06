@@ -52,21 +52,21 @@ ion-header {
 /* Login container styling for centered floating box */
 .login-container {
   max-width: 400px;
-  width: 100%;
+  width: auto;
+
   min-height: auto;
-  /* Size based on content */
-  // background: #ffffff;
+
   
   border-radius: 12px;
   box-shadow: 0 12px 32px rgba(0, 123, 255, 0.5), 0 6px 16px rgba(255, 87, 127, 0.4);
-  /* Enhanced colorful shadow */
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 2rem auto;
-  /* Center horizontally and ensure top/bottom spacing */
-}
+  // background: #ffffff;
+  // animation: float 3s ease-in-out infinite; /* floating animation */
+  }
 
 /* Logo container styling */
 .logo-container {
