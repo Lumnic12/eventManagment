@@ -96,8 +96,8 @@ export class EventsComponent implements OnInit {
     },
     {
       id: 7,
-      title: 'Hackathon 2023',
-      date: 'August 1, 2023',
+      title: 'Hackathon 2025',
+      date: 'August 1, 2025',
       location: 'Innovation Center, Seattle',
       category: 'Technology',
       description: '48-hour coding challenge with amazing prizes!',
@@ -106,7 +106,7 @@ export class EventsComponent implements OnInit {
     {
       id: 8,
       title: 'Blockchain Summit',
-      date: 'August 10, 2023',
+      date: 'August 10, 2025',
       location: 'Digital Center, Austin',
       category: 'Technology',
       description: 'Explore the future of blockchain technology.',
@@ -117,7 +117,7 @@ export class EventsComponent implements OnInit {
     {
       id: 9,
       title: 'Food & Wine Festival',
-      date: 'August 5, 2023',
+      date: 'August 5, 2025',
       location: 'Downtown, Chicago',
       category: 'Food',
       description: 'Taste delicious food and wine from local vendors.',
@@ -126,7 +126,7 @@ export class EventsComponent implements OnInit {
     {
       id: 10,
       title: 'Cooking Masterclass',
-      date: 'August 15, 2023',
+      date: 'August 15, 2025',
       location: 'Culinary Institute, Chicago',
       category: 'Food',
       description: 'Learn cooking techniques from professional chefs.',
@@ -135,7 +135,7 @@ export class EventsComponent implements OnInit {
     {
       id: 11,
       title: 'Street Food Festival',
-      date: 'August 25, 2023',
+      date: 'August 25, 2025',
       location: 'City Park, Miami',
       category: 'Food',
       description: 'Experience diverse street food from around the world.',
@@ -144,7 +144,7 @@ export class EventsComponent implements OnInit {
     {
       id: 12,
       title: 'Vegan Food Fair',
-      date: 'September 5, 2023',
+      date: 'September 5, 2025',
       location: 'Green Space, Portland',
       category: 'Food',
       description: 'Discover delicious plant-based food options.',
@@ -155,7 +155,7 @@ export class EventsComponent implements OnInit {
     {
       id: 13,
       title: 'Art Exhibition',
-      date: 'September 20, 2023',
+      date: 'September 20, 2025',
       location: 'Art Gallery, Los Angeles',
       category: 'Art',
       description: 'Explore beautiful artwork from talented artists.',
@@ -164,7 +164,7 @@ export class EventsComponent implements OnInit {
     {
       id: 14,
       title: 'Photography Workshop',
-      date: 'September 25, 2023',
+      date: 'September 25, 2025',
       location: 'Photo Studio, Los Angeles',
       category: 'Art',
       description: 'Learn photography techniques from professionals.',
@@ -173,7 +173,7 @@ export class EventsComponent implements OnInit {
     {
       id: 15,
       title: 'Sculpture Exhibition',
-      date: 'October 5, 2023',
+      date: 'October 5, 2025',
       location: 'Modern Museum, New York',
       category: 'Art',
       description: 'View impressive sculptures from contemporary artists.',
@@ -182,7 +182,7 @@ export class EventsComponent implements OnInit {
     {
       id: 16,
       title: 'Street Art Tour',
-      date: 'October 10, 2023',
+      date: 'October 10, 2025',
       location: 'Downtown, Miami',
       category: 'Art',
       description: 'Guided tour of the city\'s best street art.',
@@ -192,8 +192,8 @@ export class EventsComponent implements OnInit {
     // Sports Events
     {
       id: 17,
-      title: 'Marathon 2023',
-      date: 'October 15, 2023',
+      title: 'Marathon 2025',
+      date: 'October 15, 2025',
       location: 'City Center, Boston',
       category: 'Sports',
       description: 'Join the annual marathon and test your endurance.',
@@ -202,7 +202,7 @@ export class EventsComponent implements OnInit {
     {
       id: 18,
       title: 'Basketball Tournament',
-      date: 'October 25, 2023',
+      date: 'October 25, 2025',
       location: 'Sports Arena, Chicago',
       category: 'Sports',
       description: 'Watch exciting basketball matches between local teams.',
@@ -211,7 +211,7 @@ export class EventsComponent implements OnInit {
     {
       id: 19,
       title: 'Yoga in the Park',
-      date: 'November 1, 2023',
+      date: 'November 1, 2025',
       location: 'Central Park, New York',
       category: 'Sports',
       description: 'Join a relaxing yoga session in the open air.',
@@ -220,7 +220,7 @@ export class EventsComponent implements OnInit {
     {
       id: 20,
       title: 'Swimming Competition',
-      date: 'November 5, 2023',
+      date: 'November 5, 2025',
       location: 'Aquatic Center, Los Angeles',
       category: 'Sports',
       description: 'Watch professional swimmers compete for the championship.',
@@ -231,7 +231,7 @@ export class EventsComponent implements OnInit {
     {
       id: 21,
       title: 'Business Networking Event',
-      date: 'November 8, 2023',
+      date: 'November 8, 2025',
       location: 'Grand Hotel, Seattle',
       category: 'Business',
       description: 'Connect with professionals and expand your network.',
@@ -240,7 +240,7 @@ export class EventsComponent implements OnInit {
     {
       id: 22,
       title: 'Startup Pitch Competition',
-      date: 'November 15, 2023',
+      date: 'November 15, 2025',
       location: 'Innovation Hub, San Francisco',
       category: 'Business',
       description: 'Watch startups pitch their ideas to investors.',
@@ -249,7 +249,7 @@ export class EventsComponent implements OnInit {
     {
       id: 23,
       title: 'Marketing Workshop',
-      date: 'November 20, 2023',
+      date: 'November 20, 2025',
       location: 'Business Center, New York',
       category: 'Business',
       description: 'Learn effective marketing strategies for your business.',
@@ -258,7 +258,7 @@ export class EventsComponent implements OnInit {
     {
       id: 24,
       title: 'Leadership Conference',
-      date: 'November 25, 2023',
+      date: 'November 25, 2025',
       location: 'Convention Center, Dallas',
       category: 'Business',
       description: 'Develop your leadership skills with expert guidance.',

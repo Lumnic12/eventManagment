@@ -152,26 +152,26 @@
   max-width: 25%;
 }
 
-@media (max-width: 992px) {
-  .categories-section ion-col {
-    flex: 1 1 33.33%;
-    max-width: 33.33%;
-  }
-}
+// @media (max-width: 992px) {
+//   .categories-section ion-col {
+//     flex: 1 1 33.33%;
+//     max-width: 33.33%;
+//   }
+// }
 
-@media (max-width: 768px) {
-  .categories-section ion-col {
-    flex: 1 1 50%;
-    max-width: 50%;
-  }
-}
+// @media (max-width: 768px) {
+//   .categories-section ion-col {
+//     flex: 1 1 50%;
+//     max-width: 50%;
+//   }
+// }
 
-@media (max-width: 576px) {
-  .categories-section ion-col {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
+// @media (max-width: 576px) {
+//   .categories-section ion-col {
+//     flex: 1 1 100%;
+//     max-width: 100%;
+//   }
+// }
 
 /* ✅ Event Carousel */
 .event-carousel {

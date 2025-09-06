@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="white" >
+  <ion-toolbar color="white">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
@@ -24,8 +24,14 @@
     <ion-segment-button value="sports">
       <ion-label>Sports</ion-label>
     </ion-segment-button>
-    <ion-segment-button value="tech">
+    <ion-segment-button value="Technology">
       <ion-label>Tech</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="food">
+      <ion-label>Food</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Business">
+      <ion-label>Business</ion-label>
     </ion-segment-button>
   </ion-segment>
 </ion-header>
@@ -67,10 +73,10 @@
             (click)="unregisterFromEvent(selectedEvent)">
             Cancel Registration
           </ion-button>
-              <ion-button fill="clear" (click)="closeEventDetails()">
-      <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
-      Back to Events
-    </ion-button>
+          <ion-button fill="clear" (click)="closeEventDetails()">
+            <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+            Back to Events
+          </ion-button>
         </div>
       </ion-card-content>
     </ion-card>
